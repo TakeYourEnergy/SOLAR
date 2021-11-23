@@ -86,3 +86,53 @@ a {
 .link__item {
     padding: 0 10px;
 }
+
+.service {
+    margin-top: 150px;
+}
+
+.container {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.service__title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 33px;
+    color: #868585;
+    text-transform: uppercase;
+}
+
+.service__content {
+    display: flex;
+    margin-top: 60px;
+    justify-content: space-between;
+}
+
+.service__inner {
+    max-width: 510px;
+}
+
+.service__box {
+    margin-bottom: 50px;
+}
+
+.service__box:last-child {
+    margin-bottom: 0px
+}
+
+.service__box-title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    color: #303030;
+    margin-bottom: 15px;
+}
+
+.service__box-text {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+}
