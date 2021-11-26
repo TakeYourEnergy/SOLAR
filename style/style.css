@@ -139,6 +139,7 @@ a {
 
 .info {
     padding-top: 150px;
+    margin-bottom: 150px;
 }
 
 .info__title {
@@ -262,10 +263,6 @@ a {
     
 }
 
-.info__list-item {
-    
-}
-
 .info__list-title {
     font-weight: bold;
     font-size: 18px;
@@ -279,4 +276,24 @@ a {
     font-size: 14px;
     line-height: 19px;
     color: #303030;
+}
+
+.blockquote {
+    background-image: url(../img/Sun.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    margin-bottom: 150px;
+    padding: 128px 0 144px;
+}
+
+.blockquote__text {
+    font-weight: normal;
+    font-size: 42px;
+    line-height: 57px;
+    text-align: center;
+    color: #FFFFFF;
+    max-width: 673px;
+    margin: 0 auto;
 }
