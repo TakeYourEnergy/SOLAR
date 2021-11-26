@@ -24,10 +24,9 @@ for (let i = 0; i < itemTab.length; i++) {
 
 // !-------------------------слайдер----------------------------
 let btnR = document.querySelector('.buttonSlider-right')
+let btnL = document.querySelector('.buttonSlider-left')
 let sliderItem = document.querySelectorAll('.info-slider__item')
 let i = 0
-
-console.log(btnR);
 
 btnR.addEventListener('click', () => {
    i++
@@ -40,6 +39,26 @@ btnR.addEventListener('click', () => {
       sliderItem[i].classList.add("info-slider__item_active")
    }
 })
+
+
+btnL.addEventListener('click', () => {
+   i--
+   console.log(i);
+   if (i < 0) {
+      i = sliderItem.length - 1 // i === 2
+      sliderItem[i].classList.add("info-slider__item_active")
+      sliderItem[0].classList.remove("info-slider__item_active")
+   } else {
+      sliderItem[i].classList.add("info-slider__item_active")
+      sliderItem[i + 1].classList.remove("info-slider__item_active")
+   }
+})
+
+
+
+
+
+
 
 
 
