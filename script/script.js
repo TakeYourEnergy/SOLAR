@@ -6,10 +6,10 @@ let infoTab = document.querySelectorAll('.info-tabs__content')
 for (let i = 0; i < itemTab.length; i++) {
    itemTab[i].addEventListener('click', (e) => {
       e.preventDefault()
-      let tabTag = e.target.getAttribute("item-tab")
+      let tabTag = e.target.getAttribute("data-itemtab")
 
       for (let j = 0; j < infoTab.length; j++) {
-         let infoTag = infoTab[j].getAttribute("info-tab")
+         let infoTag = infoTab[j].getAttribute("data-infotab")
 
          if (tabTag === infoTag) {
             itemTab[j].classList.add("info-tabs__item_active")
